@@ -3,8 +3,8 @@
     public class Program
     {
         public static void Main(string[] args)
-        {    
-            
+        {
+
             // default constructor.......................
             //ConstructType DefObj = new ConstructType();
             //Console.WriteLine("Default constructor " + DefObj.num);
@@ -21,12 +21,16 @@
             //PrivateConstructor priCons = new PrivateConstructor();
 
             //Copy Constructor.....................
-            CopyConstructor copyCons = new CopyConstructor(10,20);
-            Console.WriteLine("Simple Constructor : " + copyCons.numFirst + " " + copyCons.numSecond);
+            //CopyConstructor copyCons = new CopyConstructor(10,20);
+            //Console.WriteLine("Simple Constructor : " + copyCons.numFirst + " " + copyCons.numSecond);
 
-            //Copy constructor call
-            CopyConstructor copyConstructor= new CopyConstructor(copyCons);
-            Console.WriteLine("Copy Constructor : " + copyConstructor.numFirst + " " + copyConstructor.numSecond);
+            ////Copy constructor call
+            //CopyConstructor copyConstructor= new CopyConstructor(copyCons);
+            //Console.WriteLine("Copy Constructor : " + copyConstructor.numFirst + " " + copyConstructor.numSecond);
+
+            //Static Constructor......................
+            StaticConstructor StaticConObject = new StaticConstructor();
+            StaticConObject.InstanceMethod();
 
 
 
