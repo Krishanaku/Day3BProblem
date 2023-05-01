@@ -10,10 +10,12 @@ namespace Day3BProb
     {
         //default constructor.............
         public int num = 10;
+        //Non parmeterized constructor.....................
         public ConstructType()
         {
             Console.WriteLine("This is non Parameterized Constructor");
         }
+        //parmeterized constructor.....................
         public int modelnum;
         public string modelname;
 
@@ -22,7 +24,7 @@ namespace Day3BProb
             modelnum = ModelNum;
             modelname = ModelName;
         }
-
+        //parmeterized constructor.....................
         public string model;
         public string color;
         public int year;

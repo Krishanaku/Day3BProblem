@@ -2,7 +2,7 @@
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             ////InterFace................
             //IAnimal myDog = new Dogs();
