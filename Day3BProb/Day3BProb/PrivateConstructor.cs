@@ -12,7 +12,7 @@ namespace Day3BProb
         {
             Console.WriteLine("This is Private Constructor Only Access in same Class");
         }
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             PrivateConstructor instance = new PrivateConstructor();
 
