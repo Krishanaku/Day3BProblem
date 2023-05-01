@@ -1,4 +1,6 @@
-﻿namespace Day3BProb
+﻿using Day3BProb.MyNamespace;
+
+namespace Day3BProb
 {
     public class Program
     {
@@ -29,9 +31,35 @@
             //Console.WriteLine("Copy Constructor : " + copyConstructor.numFirst + " " + copyConstructor.numSecond);
 
             //Static Constructor......................
-            StaticConstructor StaticConObject = new StaticConstructor();
-            StaticConObject.InstanceMethod();
+            //StaticConstructor StaticConObject = new StaticConstructor();
+            //StaticConObject.InstanceMethod();
 
+            //Access Modifier.................
+
+            MyClass myObject = new MyClass();
+
+            // Access public variable and method
+            Console.WriteLine("The value of myPublicVariable is: " + myObject.myPublicVariable);
+            myObject.MyPublicMethod();
+
+            // Cannot access private variable and method
+            // Console.WriteLine("The value of myPrivateVariable is: " + myObject.myPrivateVariable);
+            // myObject.MyPrivateMethod();
+
+            MyDerivedClass myDerivedObject = new MyDerivedClass();
+
+            // Access protected variable and method from derived class
+            myDerivedObject.MyDerivedMethod();
+
+            // Cannot access protected variable and method from base class
+            // Console.WriteLine("The value of myProtectedVariable is: " + myObject.myProtectedVariable);
+            // myObject.MyProtectedMethod();
+
+            // Access internal variable and method within same assembly
+            Console.WriteLine("The value of myInternalVariable is: " + myObject.myInternalVariable);
+            myObject.MyInternalMethod();
+
+            Console.ReadLine();
 
 
         }
